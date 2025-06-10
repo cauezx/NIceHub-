@@ -5,14 +5,16 @@
 local Kaitun = {}
 
 -- Configurações
-Kaitun.Config = {
-    GearStop = 4,
-    AutoFarmFrags = true,
-    WebhookURL = "SEU_WEBHOOK_AQUI",
-    RacesToFarm = {"Cyborg", "Ghoul", "Angel", "Mink", "Human", "Fishman"},
-    StopWhenDone = true,
-    AutoBuyRaces = true,
-    CopyConfigFrom = nil, -- exemplo: "main_account"
+function Kaitun:SendWebhook(message)
+    if self.Config.WebhookURL ~= "" then
+        syn.request({
+            Url = self.Config.WebhookURL,
+            Method = "POST",
+            Headers = {["Content-Type"] = "application/json"},
+            Body = game:GetService("HttpService"):JSONEncode({content = message})
+        })
+    end
+end
 }
 
 -- Funções utilitárias
