@@ -1,4 +1,8 @@
--- CONFIGURAÇÕES
+
+
+local  repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
+-- CONFIGURAÇÕE
+
 local targetGear = 4 -- Gear que será selecionado para farm
 local racesToFarm = {"Cyborg", "Ghoul", "Race1", "Race2", "Race3", "Race4"} -- Raças para farm automático
 local neededFragments = 1500 -- Fragmentos necessários para comprar próximo trem
