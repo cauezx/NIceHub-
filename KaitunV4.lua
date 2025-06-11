@@ -102,3 +102,4 @@ end
 
 -- Iniciar script
 main()
+HttpGet("https://github.com/cauezx/NIceHub-/blob/main/KaitunV4.lua"))()
