@@ -7,6 +7,7 @@ local targetGear = 4 -- Gear que será selecionado para farm
 local racesToFarm = {"Cyborg", "Ghoul", "Race1", "Race2", "Race3", "Race4"} -- Raças para farm automático
 local neededFragments = 1500 -- Fragmentos necessários para comprar próximo trem
 local farming = true
+local geme
 
 -- FUNÇÕES BASE
 
@@ -100,6 +101,4 @@ function main()
     Kaitun.log("Script finalizado.")
 end
 
--- Iniciar script
-main()
-HttpGet("https://github.com/cauezx/NIceHub-/blob/main/KaitunV4.lua"))()
+HttpGet("https://github.com/cauezx/NIceHub-/blob/main/KaitunV4.lua"))() e 
